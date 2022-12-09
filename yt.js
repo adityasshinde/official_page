@@ -32,7 +32,7 @@ app.get('/', function(req, res) {
   });
 //Get Request Method
 app.get('/community', function(req, res) {
-    res.sendFile(path.join(__dirname, '/community.html'));
+    res.sendFile(path.join(__dirname, './community.html'));
   });
   
   //Post Request Method
