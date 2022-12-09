@@ -1,0 +1,100 @@
+/* CSS reset  */
+.Post{
+    display: none;
+}
+body{
+   width:100% ; 
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Navigation Bar  */
+
+#button li input{
+    display: none;
+}
+#button li button{
+    display: none;
+}
+#navbar{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+}
+#Navigation {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+#Navigation ul li a{
+    text-decoration: none;
+    padding: 0px 8px;
+    border-radius: 6px;
+   }
+
+   #Navigation ul li a:hover{
+       padding: 6px 9px;
+   }
+   #logo img{
+    height: 50px;
+    width: 60px;
+   }
+/* Home Section  */
+#Home{
+    position: relative;
+    top: 0px;
+    height: 53vh;
+}
+
+.welcome{
+    width:100vw;
+    text-align: center;
+    position: relative;
+    top: 5vh;
+}
+.welcome p{
+    width: 80vw;
+}
+.h-primary{
+  
+    font-size: 2rem;
+}
+#navbar::before{
+    height: 15vh;
+}
+#mob{
+    display: flex;
+    margin: 20px;
+    margin-bottom: -10px;
+}
+/* Channels-Section  */
+#Channels{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.chnl{
+    width: 80vw;
+    margin:1vw 4vw;
+    padding: 10px;
+
+}
+/* Summary-Section  */
+#Summary-Section{
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+}
+#Summary-Section::before{
+    height: 75vh;
+}
+.Summary-items{
+    margin-top: 2vh;
+}
+#comm{
+    display: none;
+}

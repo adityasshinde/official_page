@@ -1,0 +1,267 @@
+/* CSS reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Navigation Bar  */
+#navbar{
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    font-family: 'Josefin Sans', sans-serif;
+font-size: 1.2rem;
+position:fixed;
+z-index: 1;
+}
+#navbar::before{
+content: "";
+position: absolute;
+width: 100vw;
+height: 13vh;
+background-color: black;
+z-index: -1;
+opacity: 0.6;
+}
+#Navigation{
+ display: flex;   
+} 
+/* Navigation Bar:list Styling  */
+#Navigation ul li a{
+ text-decoration: none;
+ padding: 0px 15px;
+ color: white;
+ border-radius: 8px;
+}
+#Navigation ul li a:hover{
+ background-color: white;
+ color: black;
+ padding: 9px 17px;
+}
+#Navigation ul{
+    list-style: none ;
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+/* Navigation Bar: logo  */
+#logo{
+    margin: 0px 17px;
+    margin-top: 8px;
+    margin-bottom: 4px;
+  
+}
+#logom{
+    border: solid 2px white;
+    border-radius: 70px;
+
+}
+/* Navigation Bar: Buttons  */
+#button{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.btn a{
+    text-decoration: none;
+    color: black;
+}
+.btn a:hover{
+    
+    color: white;
+}
+
+#button li input{
+    margin: 20px;
+border-radius: 8px;
+padding: 8px;
+font-family: 'Josefin Sans', sans-serif;
+}
+#button li button{
+    margin: 20px;
+
+}
+/* Home Section  */
+#Home{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 100vw;
+   background: rgba(0, 0, 0, 0.7) url('/static/Images/bg.jpg');
+   background-size: cover;
+   background-position: center;
+   background-blend-mode: darken;
+   height: 100vh;
+}
+.welcome h1,.welcome p{
+    color: white;
+}
+.welcome{
+   width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.Post hr{
+    width: 10vw;
+}
+#hr{
+    width: 50vw;
+    position: relative;
+  left: 25vw;
+}
+#mob{
+    display: none;
+}
+
+/* Channels Section  */
+#Chnl-Section{
+    font-family: 'Bree Serif', serif;
+}
+#Channels{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    margin: 0vw 5vw;
+}
+.chnl{
+    width: 20vw;
+    margin:2vw 4vw;
+    padding: 10px;
+    text-align: center;
+    
+}
+.chnl{
+    width: 20vw;
+    margin:2vw 4vw;
+    padding: 10px;
+    text-align: center;
+    
+}
+#ch{
+    padding: 10px;
+    margin: 10px;
+    font-size: 2rem;
+    
+}
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+}
+h3 a{
+    text-decoration: none;
+}
+h3 a:hover{
+    font-size: 1.5rem;
+}
+
+/* About Us */
+#About-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about{
+    width: 70vw;
+    margin: 2vw;
+    padding: 1vw;
+}
+#About-Section h2{
+    padding-top: 20px;
+    font-size: 2.3rem;
+}
+.about button{
+    font-size: 1rem;
+    margin: 8px;
+    padding: 8px;
+}
+
+/* Summary Section  */
+p a{
+    font-family: 'Comfortaa', cursive;
+color: white;
+text-align: center;
+}
+.-para{
+    margin-top: 10px;
+}
+#Summary-Section{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr ;
+    height: 45vh;
+}
+#Summary-Section::before{
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 45vh;
+    background-color:  rgb(5, 5, 36);
+    z-index: -1;
+
+}
+
+.Summary-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+ margin-top: 4vh;
+}
+.Summary-items h3{
+    font-family: 'Bree Serif', serif;
+    color: white;
+}
+
+/* Footer-Section  */
+footer{
+    background-color: black;
+}
+footer h4{
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    padding: 7px;
+}
+
+
+/* Utility Classes  */
+.btn{
+    padding: 10px;
+    border-radius: 8px;
+    
+    font-family: 'Josefin Sans', sans-serif;
+  cursor: pointer;
+}
+.btn:hover{
+background-color: rgb(250, 36, 54);
+color: white;
+}
+a{
+    text-decoration: none;
+}
+.h-primary{
+    font-family: 'Fredoka One', cursive;
+    font-size: 3.8rem;
+}
+.h-secondary{
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: 1.8rem;
+}
+.h-tertiary{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.4rem;
+}
+.h-qua{
+  
+    font-size: 1.1rem;
+}
+.center{
+    text-align: center;
+}
